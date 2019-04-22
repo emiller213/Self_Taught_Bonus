@@ -18,6 +18,7 @@ def quiz():
             correct_answers += 1
         else:
             print("Incorrect!")
+            print("The correct answer is: " + answer_split.capitalize() + ".")
             incorrect_answers += 1
     score = 20 * correct_answers
     print("Quiz complete!  You answered " + str(correct_answers) + " correctly!")
