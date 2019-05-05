@@ -1,7 +1,7 @@
 import csv
 
 
-user_input = input("What would you like to sort by? (Country,Name,GDPPC, Literacy,InfantMortality, Agriculture,	Population,	NetMigration)")
+user_input = input("What would you like to sort by? (Country,Name, GDPPC, Literacy, InfantMortality, Agriculture, Population, NetMigration): ")
 
 
 
