@@ -7,8 +7,21 @@ with open('Countries.csv', 'r', newline='') as input_file:
     csv_input = csv.DictReader(input_file)
     f1 = lambda row: row[user_input]
     f2 = lambda row: int(row[user_input])
+    f3 = lambda row: float(row[user_input])
     if user_input == 'Country':
         data = sorted(csv_input, reverse=True, key=f2)
+    elif user_input == 'GDPPC':
+        data = sorted(csv_input, reverse=True, key=f2)
+    elif user_input == 'Literacy':
+        data = sorted(csv_input, reverse=True, key=f3)
+    elif user_input == 'InfantMortality':
+        data = sorted(csv_input, reverse=False, key=f3)
+    elif user_input == 'Agriculture':
+        data = sorted(csv_input, reverse=False, key=f3)
+    elif user_input == 'Population':
+        data = sorted(csv_input, reverse=True, key=f2)
+    elif user_input == 'NetMigration':
+        data = sorted(csv_input, reverse=True, key=f3)
     else:
         data = sorted(csv_input, reverse=True, key=f1)
 
