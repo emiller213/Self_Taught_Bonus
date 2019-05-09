@@ -1,5 +1,5 @@
 class BankAccount:
-    balance = 150.346
+    balance = 150.34
 
 
 class Deposit:
